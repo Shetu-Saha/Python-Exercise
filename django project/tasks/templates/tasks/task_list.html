@@ -1,0 +1,7 @@
+<h1>Task List</h1>
+<a href="/add/">Add Task</a>
+<ul>
+  {% for task in tasks %}
+    <li>{{ task.title }} - {% if task.complete %}✅{% else %}❌{% endif %}</li>
+  {% endfor %}
+</ul>
